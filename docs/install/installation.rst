@@ -1,11 +1,13 @@
 .. meta::
    :description: A library that can be loaded by ROCr to print the AMDGPU wavefront states
-   :keywords: ROCdebug-agent, ROCm, library, tool, rocr
+   :keywords: ROCdebug-agent installation, ROCR Debug Agent installation, install ROCdebug-agent, install ROCR Debug Agent,
+    build ROCdebug-agent, build ROCR Debug Agent
+
 
 .. _installation:
 
 ==================================
-Installation
+ROCR debug agent installation
 ==================================
 
 This document provides information required to build and install ROCR Debug Agent (ROCdebug-agent) library.
@@ -17,31 +19,36 @@ Prerequisites
 
 - A C++ 17 compiler such as GCC 7 or Clang 5.
 
-- The AMD ROCm software stack. See the `ROCm installation instructions <https://rocm.docs.amd.com/projects/install-on-linux/en/latest/index.html>`_.
+- The AMD ROCm software stack. See the `ROCm installation instructions <rocm-install-on-linux:index>`.
 
-- Packages as per the OS.
+- Install the required packages according to the OS:
 
-  - For Ubuntu 18.04 and Ubuntu 20.04:
+.. tab-set::
 
-  .. code:: shell
+  .. tab-item:: Ubuntu 18.04 and Ubuntu 20.04
+    :sync: ubuntu
 
-    apt install gcc g++ make cmake libelf-dev libdw-dev
+    .. code-block:: shell
 
-  - For CentOS 8.1 and RHEL 8.1:
+      apt install gcc g++ make cmake libelf-dev libdw-dev
 
-  .. code:: shell
+  .. tab-item:: CentOS 8.1 and RHEL 8.1
+    :sync: rhel
 
-    yum install gcc gcc-c++ make cmake elfutils-libelf-devel elfutils-devel
+    .. code-block:: shell
 
-  - For SLES 15 Service Pack 1:
+      yum install gcc gcc-c++ make cmake elfutils-libelf-devel elfutils-devel
 
-  .. code:: shell
+  .. tab-item:: SLES 15 Service Pack 1
+    :sync: sles
 
-    zypper install gcc gcc-c++ make cmake libelf-devel libdw-devel
+    .. code-block:: shell
+
+      zypper install gcc gcc-c++ make cmake libelf-devel libdw-devel
 
 - Python 3.6 or later to run the tests.
 
-- ROCdbgapi library. This can be installed using the ROCdbgapi package as part of the ROCm release. See the instructions to install `ROCdbgapi library <https://rocm.docs.amd.com/projects/ROCdbgapi/en/latest/>`_.
+- `ROCdbgapi library <rocdbgapi:index>`. This can be installed using the ROCdbgapi package as part of the ROCm release. See the instructions to install `ROCdbgapi library <https://rocm.docs.amd.com/projects/ROCdbgapi/en/latest/>`_.
 
 Build and install
 -------------------
@@ -95,7 +102,7 @@ Output:
     100% tests passed, 0 tests failed out of 1
     Total Test time (real) =   1.59 sec
 
-You can run the tests individually outside of the ``CTest`` harness as shown below:
+You can run the tests individually outside of the ``CTest`` harness as shown:
 
 .. code-block:: shell
 
