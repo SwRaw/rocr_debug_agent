@@ -9,6 +9,7 @@ subtrees:
   - caption: How to
     entries:
     - file: how-to/user-guide
+      title: User guide
   - caption: About
     entries:
     - file: license
