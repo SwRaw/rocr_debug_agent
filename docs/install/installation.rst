@@ -6,14 +6,14 @@
 
 .. _installation:
 
-==================================
+==============================
 ROCR debug agent installation
-==================================
+==============================
 
 This document provides information required to build and install ROCR Debug Agent (ROCdebug-agent) library.
 
 Prerequisites
-------------------
+--------------
 
 - A system supporting ROCm. See the `supported operating systems <https://rocm.docs.amd.com/projects/install-on-linux/en/latest/reference/system-requirements.html#supported-operating-systems>`_.
 
@@ -25,21 +25,21 @@ Prerequisites
 
 .. tab-set::
 
-  .. tab-item:: Ubuntu 18.04 and Ubuntu 20.04
+  .. tab-item:: Ubuntu 22.04 and Ubuntu 24.04
     :sync: ubuntu
 
     .. code-block:: shell
 
       apt install gcc g++ make cmake libelf-dev libdw-dev
 
-  .. tab-item:: CentOS 8.1 and RHEL 8.1
+  .. tab-item:: CentOS 8.1 and RHEL 8/9
     :sync: rhel
 
     .. code-block:: shell
 
       yum install gcc gcc-c++ make cmake elfutils-libelf-devel elfutils-devel
 
-  .. tab-item:: SLES 15 Service Pack 1
+  .. tab-item:: SLES 15
     :sync: sles
 
     .. code-block:: shell
@@ -82,7 +82,7 @@ The installed ROCdebug-agent library and tests are placed in:
 - <install-prefix>/src/rocm-debug-agent-test/*
 
 Test
--------------
+-----
 
 To test the ROCdebug-agent library, use:
 
