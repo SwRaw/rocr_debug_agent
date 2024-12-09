@@ -48,7 +48,7 @@ Prerequisites
 
 - Python 3.6 or later to run the tests.
 
-- :doc:`ROCdbgapi library <rocdbgapi:index>`. This can be installed using the ROCdbgapi package as part of the ROCm release. See the instructions to install `ROCdbgapi library <https://rocm.docs.amd.com/projects/ROCdbgapi/en/latest/>`_.
+- :doc:`ROCdbgapi library <rocdbgapi:index>`. This can be installed using the ROCdbgapi package as part of the ROCm release. See the instructions to install :doc:`ROCdbgapi library <rocdbgapi:install/build>`_.
 
 Build and install
 -------------------
