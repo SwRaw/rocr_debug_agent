@@ -19,7 +19,7 @@ Prerequisites
 
 - A C++ 17 compiler such as GCC 7 or Clang 5.
 
-- The AMD ROCm software stack. See the `ROCm installation instructions <rocm-install-on-linux:index>`.
+- The AMD ROCm software stack. See the :doc:`ROCm installation instructions <rocm-install-on-linux:index>`.
 
 - Install the required packages according to the OS:
 
@@ -48,7 +48,7 @@ Prerequisites
 
 - Python 3.6 or later to run the tests.
 
-- `ROCdbgapi library <rocdbgapi:index>`. This can be installed using the ROCdbgapi package as part of the ROCm release. See the instructions to install `ROCdbgapi library <https://rocm.docs.amd.com/projects/ROCdbgapi/en/latest/>`_.
+- :doc:`ROCdbgapi library <rocdbgapi:index>`. This can be installed using the ROCdbgapi package as part of the ROCm release. See the instructions to install `ROCdbgapi library <https://rocm.docs.amd.com/projects/ROCdbgapi/en/latest/>`_.
 
 Build and install
 -------------------
