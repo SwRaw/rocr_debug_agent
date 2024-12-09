@@ -32,7 +32,7 @@ Prerequisites
 
       apt install gcc g++ make cmake libelf-dev libdw-dev
 
-  .. tab-item:: CentOS 8.1 and RHEL 8/9
+  .. tab-item:: CentOS 8 and RHEL 8/9
     :sync: rhel
 
     .. code-block:: shell
